@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARKASS Juice - Premium Juice Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Barkass_logo.png" alt="BARKASS Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#products">Our Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="intro">
+    <div class="hero-content">
+        <h1>Welcome to BARKASS Juice</h1>
+        <p>Experience the finest, freshest, and most delicious fruit juices.</p>
+        <a href="#products" class="btn-main">Explore Our Products</a>
+    </div>
+</section>
+
+<!-- Our Products Section -->
+<section id="products">
+    <h2>Our Premium Juices</h2>
+    <div class="product-slider">
+        <div class="product-item">
+            <img src="juice1.jpg" alt="Real Fruit Power">
+            <h3>Real Fruit Power</h3>
+            <p>Made with the finest fresh fruits to energize your day.</p>
+        </div>
+        <div class="product-item">
+            <img src="juice2.jpg" alt="Orange Delight">
+            <h3>Fresh Orange Delight</h3>
+            <p>Refreshing and zesty, the perfect citrus experience.</p>
+        </div>
+        <div class="product-item">
+            <img src="juice3.jpg" alt="Grape Boost">
+            <h3>Grape Boost</h3>
+            <p>Sweet and invigorating, packed with antioxidants.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section (Upload and View Photos) -->
+<section id="gallery">
+    <h2>Our Gallery</h2>
+    <p>Upload and share your favorite BARKASS Juice moments with us!</p>
+    <input type="file" id="fileInput" accept="image/*" onchange="loadImage(event)" />
+    <div id="imageContainer" class="gallery-container">
+        <!-- Dynamically uploaded images will appear here -->
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-main">Submit</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 BARKASS Juice. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="https://www.instagram.com/__bishal_upadhyay__/">Instagram</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
