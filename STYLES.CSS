@@ -231,3 +231,24 @@ footer .social-media a {
 footer .social-media a:hover {
     color: #ffd700;
 }
+/* Tablet और Mobile के लिए स्टाइल */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+}
+
+/* बहुत छोटे स्क्रीन (Mobile) के लिए */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  
+  .container {
+    padding: 5px;
+  }
+}
